@@ -1,0 +1,40 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ami.mebrouki.CNAC\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add laravel-mix
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;E:\laragon\bin\php\php-7.4.13-Win32-vc15-x64;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\ami.mebrouki.CNAC\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\ami.mebrouki.CNAC\AppData\Roaming\Composer\vendor\bin;E:\laragon\bin;E:\laragon\bin\apache\httpd-2.4.35-win64-VC15\bin;E:\laragon\bin\composer;E:\laragon\bin\git\bin;E:\laragon\bin\git\cmd;E:\laragon\bin\git\mingw64\bin;E:\laragon\bin\git\usr\bin;E:\laragon\bin\laragon\utils;E:\laragon\bin\mysql\mysql-5.7.24-winx64\bin;E:\laragon\bin\nginx\nginx-1.16.0;E:\laragon\bin\ngrok;E:\laragon\bin\nodejs\node-v12;E:\laragon\bin\notepad++;E:\laragon\bin\php\php-7.4.13-Win32-vc15-x64;E:\laragon\bin\putty;E:\laragon\bin\redis\redis-x64-3.2.100;E:\laragon\bin\telnet;E:\laragon\usr\bin;C:\Users\ami.mebrouki.CNAC\AppData\Local\Microsoft\WindowsApps;C:\Users\ami.mebrouki.CNAC\AppData\Local\Programs\Microsoft VS Code\bin;E:\flutter_windows\flutter;E:\flutter_windows\flutter\bin;C:\Users\ami.mebrouki.CNAC\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Java\jre7\bin;C:\ffmpeg\bin;C:\Users\ami.mebrouki.CNAC\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: self signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1497:34)
+      at TLSSocket.emit (events.js:315:20)
+      at TLSSocket._finishInit (_tls_wrap.js:932:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:706:12)
+
+npm manifest: 
+  {
+    "name": "card-e-commerce",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

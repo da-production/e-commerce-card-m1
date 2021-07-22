@@ -1,0 +1,204 @@
+@import 'variables';
+body{
+    /* background-color: #1b212b; */
+    /* background-image: linear-gradient(to right top, #4e74ac, #4d70c9, #6766e0, #9250ec, #c512eb); */
+    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-image: $gradient-1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.e-card-container{
+    margin: 20px;
+    .e-card-box{
+        margin: 20px;
+        background-color: #00040a;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 0px 11px 0px #333;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: rgb(255,0,78);
+            background: linear-gradient(145deg, rgba(255,0,78,1) 0%, rgba(0,212,255,1) 100%);
+            width: 100%;
+            height: 100%;
+            transform: skew(3deg, 6deg);
+            z-index: -1;
+            /* filter: blur(5px); */
+            border-radius: 36px;
+        }
+
+        /* card head */
+        .e-card-head{
+            position: relative;
+            height: 315px;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 235px;
+                height: 236px;
+                border-radius: 50%;
+                border-left: 117px solid $primary;
+                top: 70px;
+                right: -118px;
+                z-index: 0;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: $primary;
+                top: 25px;
+                left: 80px;
+                z-index: 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -20px;
+                right: -80px;
+                z-index: 1;
+            }
+            .title{
+                padding: 20px;
+                color: #fff;
+                text-shadow: 1px 1px 0px #333;
+                z-index: 2;
+                position: relative;
+                width: 80%;
+                font-size: 25px;
+            }
+        }
+
+        /*card body*/
+        .e-card-body{
+            .prices{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0px 20px;
+                .old-price{
+                    color: #222c3b;
+                    text-decoration: line-through;
+                }
+                .new-price{
+                    color: $secondary;
+                    font-weight: bolder;
+                    font-size: 1.2rem;
+                }
+                .discount{
+                    color: white;
+                }
+                .pourcent{
+                    color:$primary;
+                    font-weight: bolder;
+                }
+            }
+            .details,.colors-items,.sizes-items{
+                list-style: none;
+                padding: 0px 20px;
+                color: #fff;
+                font-weight: bolder;
+
+                .input-color,.input-size{
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    z-index: -1;
+                }
+            }
+            .details{
+                .colors-items {
+                    .color-item{
+                        display: inline-block;
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                }
+                .sizes-items {
+                    .size-item {
+                        display: inline-block;
+                        border: 1px solid #333;
+                        cursor: pointer;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        label{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            
+        }
+        /*end card body*/
+
+        /*card footer*/
+        .e-card-footer {
+            .btns{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0px 20px;
+                li{
+                    margin: 10px;
+                    &:first-child{
+                        width: 100%;
+                    }
+                    a{
+                        display: block;
+                    }
+                    .add-to-whishlist{
+                        border: 2px solid $primary;
+                        color: $primary;
+                        border-radius: 5px;
+                    }
+                    .add-to-cart{
+                        background-color: $secondary;
+                        color: #fff;
+                        overflow: hidden;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            height: 114%;
+                            z-index: 1;
+                            background-color: #fff;
+                            width: 25px;
+                            transform: skewX(35deg);
+                            top: 0px;
+                            left: -45px;
+                            filter: blur(9px);
+                            opacity: 0.9;
+                            transition: all .2s linear;
+                        }
+                        &:hover{
+                            &:after{
+                                left: 120%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        /*end card footer*/
+    }
+}
+
+
+
+
+
+
+

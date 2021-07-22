@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- version without webpack compiler
+        <link rel="stylesheet" href="css/app.css"> 
+    -->
+    <link rel="stylesheet" href="css/app.css">
+    <title>Card E-Commerce</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+
+
+            <div class="col-sm-6 col-lg-4  ">
+                <div class="e-card-container">
+                    <div class="e-card-box">
+                        <div class="e-card-head">
+                            <img src="images/2rotate.png" class="move-object" alt="Nike Air" title="Nike Air">
+                            <h5 class="title">NIKE W AIR HUARACHE RUN</h5>
+                        </div>
+                        <div class="e-card-body">
+                            <ul class="prices">
+                                <li class="discount">Discount: <b class="pourcent" data-discount="9">9%</b></li>
+                                <li>
+                                    <span class="old-price" data-oldprice="120">120.00$</span>
+                                    <span class="new-price" >90</span>
+                                </li>
+                            </ul>
+                            <ul class="details">
+                                <li>
+                                    <b class="color">Colors</b>
+                                    <ul class="colors-items mt-2">
+                                        <li class="color-item" style="background-color: #000000;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #006eff;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #ff0000;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #ffffff;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-2">
+                                    <b class="size ">Size</b>
+                                    <ul class="sizes-items mt-2">
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">39</label>
+                                        </li>
+
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">40</label>
+                                        </li>
+
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">41</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="e-card-footer">
+                            <ul class="btns">
+                                <li>
+                                    <a href="" class="btn btn-lg  add-to-cart">Add to cart</a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn btn-lg add-to-whishlist"><i class="far fa-heart"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4  ">
+                <div class="e-card-container">
+                    <div class="e-card-box">
+                        <div class="e-card-head">
+                            <img src="images/3rotate.png" class="move-object" alt="Nike Air" title="Nike Air">
+                            <h5 class="title">Nike Air Max Plus Supreme White - DA1472-100</h5>
+                        </div>
+                        <div class="e-card-body">
+                            <ul class="prices">
+                                <li class="discount">Discount: <b class="pourcent" data-discount="15">15%</b></li>
+                                <li>
+                                    <span class="old-price" data-oldprice="430">430.00$</span>
+                                    <span class="new-price">90.00$</span>
+                                </li>
+                            </ul>
+                            <ul class="details">
+                                <li>
+                                    <b class="color">Colors</b>
+                                    <ul class="colors-items mt-2">
+                                        <li class="color-item" style="background-color: #006eff;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #ff0000;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #ffffff;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #000000;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-2">
+                                    <b class="size ">Size</b>
+                                    <ul class="sizes-items mt-2">
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">39</label>
+                                        </li>
+
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">40</label>
+                                        </li>
+
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">41</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="e-card-footer">
+                            <ul class="btns">
+                                <li>
+                                    <a href="" class="btn btn-lg  add-to-cart">Add to cart</a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn btn-lg add-to-whishlist"><i class="far fa-heart"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4  ">
+                <div class="e-card-container">
+                    <div class="e-card-box">
+                        <div class="e-card-head">
+                            <img src="images/1rotate.png" class="move-object" alt="Nike Air" title="Nike Air">
+                            <h5 class="title">NIKE REACT GATO</h5>
+                        </div>
+                        <div class="e-card-body">
+                            <ul class="prices">
+                                <li class="discount">Discount: <b class="pourcent" data-discount="7">7%</b></li>
+                                <li>
+                                    <span class="old-price" data-oldprice="159">159.00$</span>
+                                    <span class="new-price">90.00$</span>
+                                </li>
+                            </ul>
+                            <ul class="details">
+                                <li>
+                                    <b class="color">Colors</b>
+                                    <ul class="colors-items mt-2">
+                                        <li class="color-item" style="background-color: #ff0000;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #006eff;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #000000;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                        <li class="color-item" style="background-color: #ffffff;">
+                                            <input type="checkbox" id="color-1" class="input-color" name="color">
+                                            <label for="color-1" class="selected-color item"></label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-2">
+                                    <b class="size ">Size</b>
+                                    <ul class="sizes-items mt-2">
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size ">39</label>
+                                        </li>
+
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">40</label>
+                                        </li>
+
+                                        <li class="size-item">
+                                            <input type="checkbox" id="size-1" class="input-size" name="size">
+                                            <label for="size-1" class="selected-size">41</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="e-card-footer">
+                            <ul class="btns">
+                                <li>
+                                    <a href="" class="btn btn-lg  add-to-cart">Add to cart</a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn btn-lg add-to-whishlist"><i class="far fa-heart"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- version without webpack complier
+        <script src="js/main.js"></script> 
+    -->
+    <script src="js/app.js"></script>
+</body>
+</html>
